@@ -15,7 +15,7 @@ public class RestaurantController {
 	@RequestMapping("/restaurant")
 	public ModelAndView helloWorld() {
 
-		String message = "<br><div style='text-align:center;'>" + "<h3>********** Hello World, Spring MVC Tutorial</h3>This message is coming from HungerStrikeHelloWorld.java **********</div><br><br>";
+		String message = "<br><div style='text-align:center;'>" + "<h3>Restaurant Controller</h3></div><br><br>";
 		return new ModelAndView("restaurant", "message", message);
 	}
 }

@@ -44,7 +44,7 @@
     <h1>HUNGER STRIKE</h1>
       <p class="lead">STRIKE YOUR HUNGER AT THE COST OF A CLICK</p>
       <div>&nbsp;</div>
-      <a href="restaurant.html" class="btn btn-default btn-lg">Get Menu</a>
+      <a href="restaurant.html" class="btn btn-default btn-lg">Browse Restaurants ></a>
   </div>
 </div>
 

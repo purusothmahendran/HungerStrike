@@ -29,7 +29,7 @@
     </div>
     <div class="navbar-collapse collapse" id="navbar">
       <ul class="nav navbar-nav">
-        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="about.html?id=457">ABOUT</a></li>
         <li><a href="restaurant.html">RESTAURANT</a></li>
         <li><a href="#sec3">CART</a></li>
         <li><a href="#myModal" data-toggle="modal" data-target="#myModal">LOGIN</a></li>

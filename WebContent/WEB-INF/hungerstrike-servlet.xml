@@ -24,7 +24,7 @@ http://www.springframework.org/schema/context/spring-context-4.0.xsd
 	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource"
 		destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3306/hungerstrike" />
+		<property name="url" value="jdbc:mysql://localhost:3306/hungerstrike2" />
 		<property name="username" value="root" />
 		<property name="password" value="lionlion" />
 	</bean>
@@ -47,6 +47,11 @@ http://www.springframework.org/schema/context/spring-context-4.0.xsd
 		</constructor-arg>
 	</bean>
 	<bean id ="menuItemDao" class="com.hungerstrike.dao.MenuItemDAOImpl">
+		<constructor-arg>
+			<ref bean="sessionFactory" />
+		</constructor-arg>
+	</bean>
+	<bean id ="menuDao" class="com.hungerstrike.dao.MenuDAOImpl">
 		<constructor-arg>
 			<ref bean="sessionFactory" />
 		</constructor-arg>

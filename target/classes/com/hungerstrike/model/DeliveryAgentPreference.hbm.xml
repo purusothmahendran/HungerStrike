@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.hungerstrike.model">
+    <class name="DeliveryAgentPreference" table="deliveryagentpreference">
+        <id name="addressid" column="addressid">
+            <generator class="native"/>
+        </id>
+        <property name="agentid" column="agentid" />
+        <property name="preferencetype" column="preferencetype" />
+       
+    </class> 
+</hibernate-mapping>

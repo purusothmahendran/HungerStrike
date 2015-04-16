@@ -5,6 +5,6 @@ import java.util.List;
 import com.hungerstrike.model.MenuItem;
 
 public interface MenuItemDAO {
-	public List<MenuItem> list();
+	public List<MenuItem> list(String id);
 
 }

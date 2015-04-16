@@ -3,14 +3,15 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="com.hungerstrike.model">
-    <class name="Users" table="USERS">
-        <id name="id" column="id">
+    <class name="Users" table="USER">
+        <id name="userid" column="userid">
             <generator class="native"/>
         </id>
-        <property name="name" column="NAME" />
-        <property name="password" column="password" />
-        <property name="email" column="EMAIL" />
-        <property name="role" column="ROLE" />
-        <property name="phone" column="PHONE" />
+        <property name="userpwd" column="userpwd" />
+        <property name="fname" column="fname" />
+        <property name="lname" column="lname" />
+        <property name="email" column="email" />
+        <property name="phone" column="phone" />
+        <property name="role" column="role" />
     </class> 
 </hibernate-mapping>

@@ -12,14 +12,13 @@
         <div align="center">
             <table border="1">
                 <th>No</th>
-                <th>Itemname</th>
-                <th>Price</th>
+                <th>MenuName</th>
+                <th>Availability</th>
                  
-                <c:forEach var="item" items="${itemsList}" varStatus="status">
+                <c:forEach var="menu" items="${menusList}" varStatus="status">
                 <tr>
                     <td>${status.index + 1}</td>
-                    <td>${item.itemName}</td>
-                    <td>${item.price}</td>
+                    <td><a href="item.html?id=${menu.menuid}">${menu.description}</a></td>
                              
                 </tr>
                 </c:forEach>             

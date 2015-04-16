@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.hungerstrike.model">
+    <class name="Restaurant" table="restaurant">
+        <id name="restaurantid" column="restaurantid">
+            <generator class="native"/>
+        </id>
+        <property name="ownerid" column="ownerid" />
+        <property name="addressid" column="addressid" />
+        <property name="availability" column="availability" />
+    </class> 
+</hibernate-mapping>

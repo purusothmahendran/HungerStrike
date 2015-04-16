@@ -8,5 +8,18 @@
     <property name="show_sql">true</property> 
     <mapping resource="com/hungerstrike/model/Users.hbm.xml"/>
     <mapping resource="com/hungerstrike/model/MenuItem.hbm.xml"/>
+    <mapping resource="com/hungerstrike/model/Restaurants.hbm.xml"/>
+    <mapping resource="com/hungerstrike/model/Menu.hbm.xml"/>
+    
+    <mapping resource="com/hungerstrike/model/DeliveryAgent.hbm.xml"/>
+    <mapping resource="com/hungerstrike/model/RestaurantStaff.hbm.xml"/>
+    <mapping resource="com/hungerstrike/model/Address.hbm.xml"/>
+    <mapping resource="com/hungerstrike/model/OrderItemList.hbm.xml"/>
+    <mapping resource="com/hungerstrike/model/Orders.hbm.xml"/>
+    <mapping resource="com/hungerstrike/model/Status.hbm.xml"/>
+    <mapping resource="com/hungerstrike/model/UserPreference.hbm.xml"/>
+    <mapping resource="com/hungerstrike/model/DeliveryAgentPreference.hbm.xml"/>
+    
+    
   </session-factory>
 </hibernate-configuration>

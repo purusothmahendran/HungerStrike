@@ -3,13 +3,15 @@
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping package="com.hungerstrike.model">
-    <class name="MenuItem" table="MENU_ITEM">
-        <id name="itemId" column="ITEM_ID">
+    <class name="MenuItem" table="item">
+        <id name="itemId" column="itemid">
             <generator class="native"/>
         </id>
-        <property name="itemName" column="ITEM_NAME" />
-        <property name="price" column="PRICE" />
-        <property name="prepTime" column="PREP_TIME" />
-        <property name="menuId" column="MENU_ID" />
+        <property name="description" column="description" />
+        <property name="menuid" column="menuid" />
+        <property name="preptime" column="preptime" />
+        <property name="price" column="price" />
+        <property name="availability" column="availability" />
+        
     </class> 
 </hibernate-mapping>

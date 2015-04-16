@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.hungerstrike.model">
+    <class name="Status" table="status">
+        <id name="orderid" column="orderid">
+            <generator class="native"/>
+        </id>
+        <property name="status" column="status" />
+       
+    </class> 
+</hibernate-mapping>

@@ -32,7 +32,8 @@ public class RestaurantController {
 	@RequestMapping("/menu")
 	public ModelAndView restaurant(@RequestParam("id") String id) {
 		List<Menu> listMenu = menuDao.getMenus(id);
-        ModelAndView model = new ModelAndView("about");
+        ModelAndView model = new ModelAndView("menu");
+        model.addObject("resId",id);
         model.addObject("menusList", listMenu);
         return model;
 	}

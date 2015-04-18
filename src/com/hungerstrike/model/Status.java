@@ -1,12 +1,13 @@
 package com.hungerstrike.model;
 
 public class Status {
-	private String orderid   ;
+	private int orderid   ;
 	private String  status   ;
-	public String getOrderid() {
+	
+	public int getOrderid() {
 		return orderid;
 	}
-	public void setOrderid(String orderid) {
+	public void setOrderid(int orderid) {
 		this.orderid = orderid;
 	}
 	public String getStatus() {

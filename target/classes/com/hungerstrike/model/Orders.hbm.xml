@@ -5,7 +5,6 @@
 <hibernate-mapping package="com.hungerstrike.model">
     <class name="Orders" table="orders">
         <id name="orderid" column="orderid">
-            <generator class="native"/>
         </id>
         <property name="restaurantid" column="restaurantid" />
         <property name="userid" column="userid" />

@@ -2,8 +2,10 @@ package com.hungerstrike.model;
 
 public class OrderItemList {
 	
+
+	private int sno;
 	private String itemid  ; 
-	private String orderid       ;
+	private int orderid       ;
 	private int  quantity      ;
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
@@ -14,15 +16,21 @@ public class OrderItemList {
 	public void setItemid(String itemid) {
 		this.itemid = itemid;
 	}
-	public String getOrderid() {
+
+	public int getOrderid() {
 		return orderid;
 	}
-	public void setOrderid(String orderid) {
+	public void setOrderid(int orderid) {
 		this.orderid = orderid;
 	}
 	public int getQuantity() {
 		return quantity;
 	}
 	
-	
+	public int getSno() {
+		return sno;
+	}
+	public void setSno(int sno) {
+		this.sno = sno;
+	}
 }

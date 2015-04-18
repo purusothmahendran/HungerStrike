@@ -2,7 +2,7 @@ package com.hungerstrike.model;
 
 public class Orders {
 
-	private String orderid;
+	private int orderid;
 	private String restaurantid;
 	private String userid;
 	private String agentid;
@@ -10,11 +10,12 @@ public class Orders {
 	private int totalpreptime;
 	private String preference;
 
-	public String getOrderid() {
+
+	public int getOrderid() {
 		return orderid;
 	}
 
-	public void setOrderid(String orderid) {
+	public void setOrderid(int orderid) {
 		this.orderid = orderid;
 	}
 

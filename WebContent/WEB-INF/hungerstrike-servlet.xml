@@ -56,4 +56,14 @@ http://www.springframework.org/schema/context/spring-context-4.0.xsd
 			<ref bean="sessionFactory" />
 		</constructor-arg>
 	</bean>
+	<bean id ="orderDao" class="com.hungerstrike.dao.OrdersDAOImpl">
+		<constructor-arg>
+			<ref bean="sessionFactory" />
+		</constructor-arg>
+	</bean>
+	<bean id ="orderItemListDao" class="com.hungerstrike.dao.OrderItemListDAOImpl">
+		<constructor-arg>
+			<ref bean="sessionFactory" />
+		</constructor-arg>
+	</bean>
 </beans>

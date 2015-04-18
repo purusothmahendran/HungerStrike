@@ -23,10 +23,10 @@ public class MenuItemController {
 	private MenuItemDAO menuItemDao;
 
 	@RequestMapping("/item")
-	public ModelAndView menu(@RequestParam("id") String id) {
+	public ModelAndView menu(@RequestParam("id") String id,@RequestParam("resId")String resId) {
 		List<MenuItem> listItems = menuItemDao.list(id);
-        ModelAndView model = new ModelAndView("about");
-        model.addObject("menusList", listItems);
+        ModelAndView model = new ModelAndView("item");
+        model.addObject("itemsList", listItems);
         return model;
 	}
 }
